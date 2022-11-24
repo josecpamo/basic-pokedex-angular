@@ -1,4 +1,4 @@
-<article class="pokemons">
+<article *ngIf="!error; else errorMessage" class="pokemons">
   <img
     *ngIf="pokemons.length === 0; else loadPokemons"
     class="loader"
@@ -14,3 +14,12 @@
     ></app-card>
   </ng-template>
 </article>
+
+<ng-template #errorMessage>
+  <article class="pokemons">
+    <h2>
+      Error {{ error.status }} |
+      {{ error.statusText || "An error has ocurred" }}
+    </h2>
+  </article>
+</ng-template>
