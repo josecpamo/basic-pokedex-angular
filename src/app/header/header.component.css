@@ -1,0 +1,42 @@
+/* Header */
+
+.header {
+  height: 80px;
+  margin: 0;
+  background-color: darkgrey;
+}
+
+.logo {
+  width: fit-content;
+}
+
+.logo-img {
+  width: 64px;
+  max-width: 100%;
+  height: 64px;
+  max-width: 100%;
+}
+
+.logo-txt {
+  font-size: 32px;
+  color: white;
+  background: linear-gradient(to right, red 0%, red 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .logo {
+    flex-direction: column;
+  }
+
+  .logo-txt {
+    font-size: 20px;
+  }
+}

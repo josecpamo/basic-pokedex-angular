@@ -1,0 +1,16 @@
+/* Footer */
+
+.footer {
+  height: 70px;
+  background-color: darkgrey;
+}
+
+.author-txt {
+  font: bold;
+  font-size: 16px;
+}
+
+.author-img {
+  width: 64px;
+  height: 48px;
+}
