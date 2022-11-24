@@ -1,0 +1,16 @@
+<article class="pokemons">
+  <img
+    *ngIf="pokemons.length === 0; else loadPokemons"
+    class="loader"
+    src="../../assets/loader.svg"
+    alt="loader"
+  />
+
+  <ng-template #loadPokemons>
+    <app-card
+      *ngFor="let pokemon of pokemons"
+      [name]="pokemon.name"
+      [url]="pokemon.sprites.front_default"
+    ></app-card>
+  </ng-template>
+</article>

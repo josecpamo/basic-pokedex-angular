@@ -1,0 +1,33 @@
+/* Pokemons section */
+
+.pokemons {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+/* Loader */
+
+.loader {
+  width: 128px;
+}
+
+@media (min-width: 600px) {
+  .pokemons {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .pokemons {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pokemons {
+    grid-template-columns: auto auto auto auto;
+  }
+}

@@ -1,0 +1,9 @@
+<figure class="card flex-center flex-column">
+  <img class="card-img" [src]="url" [alt]="name" />
+  <figcaption class="card-text">{{ name }}</figcaption>
+  <div class="card-button flex-center">
+    <button [class]="buttonClass" (click)="buttonAction()">
+      <strong>{{ buttonText }}</strong>
+    </button>
+  </div>
+</figure>
